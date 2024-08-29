@@ -1,0 +1,34 @@
+{
+    "navbar": {
+        "projects": "Experiencia",
+        "skills": "Habilidades",
+        "photography": "Fotografía",
+        "contactme": "Contact Us"
+
+    },
+    "about": {
+        "title": "Hola, soy Gabriel",
+        "description": "Con años de experiencia práctica en diversos roles y estudios académicos en un campo diferente, aporto una perspectiva única al desarrollo de software y la capacidad de incorporarme rápidamente a su entorno de trabajo. Como desarrollador Full Stack dedicado, he perfeccionado mis habilidades para resolver problemas y mi historial de gestión de equipos demuestra mi capacidad para colaborar de manera efectiva y entregar resultados. Estoy ansioso por enfrentar nuevos desafíos y entregar un trabajo de alta calidad que supere sus expectativas. Conversemos sobre cómo puedo contribuir a su equipo y ayudar a impulsar su negocio hacia adelante!",
+        "button1" : "Trabajemos",
+        "button2" : "Mis proyectos",
+        "button3" : "Mi CV"
+    },
+    "projects": {
+        "title": "Mis últimas Apps",
+        "description": "Échale una mirada a algunos de los proyectos que he desarrollado en el último tiempo."
+    },
+
+    "skills": {
+        "description": "Diseñamos Sitios Web y creamos Campañas en Redes Sociales que te ayudan a alcanzar los objetivos de tu empresa, transforman ideas en historias visuales atractivas."
+    },
+    "contact": {
+        "address": "DIRECCIÓN",
+        "phone": "TELÉFONO",
+        "title": "Conversemos",
+        "description": "Proyectos? Ideas? Necesitas ayuda con algo? Contáctame y conversemos sobre cómo puedo ayudar y aportar a tu empresa.",
+        "name": "Nombre",
+        "message": "Mensaje",
+        "submit": "Enviar"
+    }
+}
+  

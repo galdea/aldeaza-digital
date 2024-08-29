@@ -1,0 +1,33 @@
+{
+    "navbar": {
+        "skills": "What we do",
+        "projects": "Portfolio",
+        "photography": "Photography",
+        "contactme": "Contact Us"
+
+    },
+    "about": {
+        "title": "Hi, I'm Gabriel",
+        "description": "With years of hands-on experience in various roles and academic studies in a different domain, I bring a unique perspective to software development and an ability to fastly incorporate to your working environment. As a dedicated Full Stack Developer, I have refined my problem-solving skills and developed a passion for creating innovative solutions. My track record of managing teams demonstrates my ability to collaborate effectively and deliver results. I am eager to take on new challenges and deliver high-quality work that exceeds expectations. Let's discuss how I can contribute to your team and help drive your business forward.",
+        "button1" : "Let's work",
+        "button2" : "My projects",
+        "button3" : "My CV"
+    },
+    "projects": {
+        "title": "What we do",
+        "description": "We specialize in positioning brands and projects for success in the digital ecosystem, providing solutions that combine captivating design, professional and strategic communication, and tailored content across social media, websites, and streaming platforms."
+    },
+   "skills": {
+    "description": "We Build & Design Websites and create Social Media Campaigns that help you reach your company's goals and transform ideas into compelling visual stories"
+},
+    "contact": {
+        "address": "ADDRESS",
+        "phone": "PHONE",
+        "title": "Let's talk",
+        "description": "Project ideas? Need help with something? Contact us today to discuss how we can help drive your business forward.",
+        "name": "Name",
+        "message": "Message",
+        "submit": "Submit"
+    }
+}
+  

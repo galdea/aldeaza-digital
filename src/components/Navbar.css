@@ -1,0 +1,8 @@
+
+.text-orange {
+    color: #c3d563;
+}
+
+.text-orange:hover {
+    color: white;
+  }
