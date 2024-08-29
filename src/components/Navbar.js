@@ -31,7 +31,7 @@ export default function Navbar() {
         <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700 flex flex-wrap items-center text-base justify-center">
           <a
             href="#projects"
-            className="mr-5 hover:text-white"
+            className="mx-5 hover:text-white"
           >
 {t("navbar.projects")}          </a>
           <a
@@ -39,6 +39,11 @@ export default function Navbar() {
             className="mr-5 hover:text-white"
           >
 {t("navbar.skills")}           </a>
+<a
+            href="#contact"
+            className="inline-flex items-center bg-gray-700 border-0 px-3 ml-3 mr-4 focus:outline-none hover:bg-gray-800 rounded text-base md:mt-0"
+          >
+{t("navbar.contactme")}           </a>
 {/* <a
   href="https://www.gabrielaldeaphotography.com"
   target="_blank"
@@ -49,21 +54,9 @@ export default function Navbar() {
           </a> */}
         </nav>
         <div className="flex items-center justify-end">
-        <button className="mr-3" onClick={() => i18n.changeLanguage("es")}>
-  <span className="fi fi-es fis rounded-full"></span>
-</button>
-
-<button className="mr-1" onClick={() => i18n.changeLanguage("en")}>
-  <span className="fi fi-us fis rounded-full"></span>
-</button>
-          <a
-            href="#contact"
-            className="inline-flex items-center bg-gray-700 border-0 px-3 ml-3 mr-4 focus:outline-none hover:bg-gray-800 rounded text-base md:mt-0"
-          >
-{t("navbar.contactme")}           </a>
           <a
             href="https://www.instagram.com/aldeaza/"
-            className="mr-5 hover:text-white"
+            className="ml-10 mr-5 hover:text-white"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -78,6 +71,13 @@ export default function Navbar() {
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </div>
+        <button className="mr-4" onClick={() => i18n.changeLanguage("es")}>
+  <span className="fi fi-es fis rounded-full"></span>
+</button>
+
+<button className="mr-1" onClick={() => i18n.changeLanguage("en")}>
+  <span className="fi fi-us fis rounded-full"></span>
+</button>
       </div>
     </header>
   );
