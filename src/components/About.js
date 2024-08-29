@@ -7,17 +7,20 @@ export default function About() {
   return (
 <section id="about">
   <div className="flex justify-center">
-    <video
-      autoPlay
-      loop
-      muted
-      playsInline
-      className="rounded-lg shadow-lg w-full h-[calc(100vh-10px)] max-h-[100vh] object-cover"
-      src="/landing-video.mp4"
-      type="video/mp4"
-    >
-      Your browser does not support the video tag.
-    </video>
+  <video
+  width="320"
+  height="240"
+  autoPlay
+  loop
+  muted
+  playsInline
+  className="rounded-lg shadow-lg w-full h-[calc(100vh-10px)] max-h-[100vh] object-cover"
+>
+  <source src="/landing-video.mp4" type="video/mp4" />
+  <source src="/landing-video.ogg" type="video/ogg" />
+  Your browser does not support the video tag.
+</video>
+
   </div>
 </section>
 
