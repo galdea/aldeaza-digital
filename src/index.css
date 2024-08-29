@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.project-image {
-    width: 100%; /* Set the width to 100% to fill the container */
-    height: 250px; /* Set a fixed height for all images */
-    object-fit: cover; /* Scale the image while preserving its aspect ratio */
-    object-position: center; /* Center the image within its container */
-  }
+/* Define a class for the section title color */
+.section-title {
+  color: white;
+}
+
+/* Custom CSS */
+.custom-green {
+  color: #c3d563;
+}

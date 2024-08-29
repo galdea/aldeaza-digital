@@ -1,31 +1,23 @@
 export const projects = [
   {
-    title: "Twitter Clone",
-    subtitle: "Perfect copy of the multibilllion dollar Social Media App ",
+    title: "Austral Escapes",
+    subtitle: "Tourism Agency Site and Social Media Campaing",
     description:
-      "Social media created using Next.js 13, Tailwind CSS, TypeScript, Prisma and Supabase",
-    image: "./project-1.gif",
-    link: "https://github.com/galdea/galdea-Twitter-Clone-using-Next.Js-and-Typescript",
+      "Landing site, product page and Social Networks campaign for high-end tourism in Patagonia",
+    image: "./austral-escapes.png",
+    link: "https://australescapes.com",
   },
   {
-    title: "MeetMeApp",
-    subtitle: "Complete FullStack app, using JS, React, Python, Flask, PostgresSQL, etc ",
+    title: "Cedar Marketing",
+    subtitle: "Auto Dealer Marketing & Advertising Agency",
     description:
-      "App with usernames login, authentification tokens, create/join/delete events, firebase Chat implementation and much more                                                  ",
-    image: "./project-2.gif",
-    link: "https://github.com/galdea/MeetMeUp",
+      "Social Networks campaign for Ohio based company Cedar Marketing",
+    image: "./cedar-marketing.png",
+    link: "https://www.instagram.com/cedar_marketing_/",
   },
-  {
-    title: "Star Wars Library",
-    subtitle: "A Star Wars universe library built with front and back end",
-    description:
-      "A Star Wars universe library of characters, vehicles and planets fetching 2 APIs, one for data and one for image rendering                                                 ",
-    image: "./project-3.gif",
-    link: "https://github.com/galdea/Build-a-StarWars-REST-API",
-  },   
   {
     title: "La Cantina SpA",
-    subtitle: "Using a Weather Api and React JS, I built the foundations of what is soon going to be the official website of La Cantina Native Forest Conservation Park",
+    subtitle: "La Cantina Native Forest Conservation Park website | Coming soon",
     description:
       "Used a Weather API and configured the elements on it, giving a precise Weather Forecast for a 100Ha Conservation Park",
     image: "./project-4.gif",
