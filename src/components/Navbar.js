@@ -39,14 +39,14 @@ export default function Navbar() {
             className="mr-5 hover:text-white"
           >
 {t("navbar.skills")}           </a>
-<a
+{/* <a
   href="https://www.gabrielaldeaphotography.com"
   target="_blank"
   className="mr-5 text-orange"
   style={{ textDecoration: "none" }}
 >
             {t("navbar.photography")} 
-          </a>
+          </a> */}
         </nav>
         <div className="flex items-center justify-end">
         <button className="mr-3" onClick={() => i18n.changeLanguage("es")}>
