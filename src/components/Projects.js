@@ -13,7 +13,13 @@ export default function Projects() {
     "tailored content",
     "social media",
     "websites",
-    "streaming platforms"
+    "streaming platforms",
+    "posicionar marcas",
+    "ecosistema digital",
+    "contenido personalizado",
+    "redes sociales",
+    "sitios web",
+    "plataformas de streaming"
     // Add any other text you want to highlight
   ];
 

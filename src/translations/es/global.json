@@ -1,9 +1,9 @@
 {
     "navbar": {
-        "projects": "Experiencia",
-        "skills": "Habilidades",
+        "projects": "Portafolio",
+        "skills": "Lo que hacemos",
         "photography": "Fotografía",
-        "contactme": "Contact Us"
+        "contactme": "Contactanos"
 
     },
     "about": {
@@ -14,8 +14,8 @@
         "button3" : "Mi CV"
     },
     "projects": {
-        "title": "Mis últimas Apps",
-        "description": "Échale una mirada a algunos de los proyectos que he desarrollado en el último tiempo."
+        "title": "Lo que hacemos",
+        "description": "Nos especializamos en posicionar marcas y proyectos para el éxito en el ecosistema digital, proporcionando soluciones que combinan un diseño cautivador, comunicación profesional y estratégica, y contenido personalizado en redes sociales, sitios web y plataformas de streaming."
     },
 
     "skills": {
