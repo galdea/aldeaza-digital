@@ -65,7 +65,7 @@ export default function Contact() {
                 Santiago, Chile
               </p>
             </div>
-            <div className="lg:w-1/2 mt-4 pl-1 pr-9 lg:mt-0 info-map">
+            <div className="lg:w-1/2 px-6">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 EMAIL
               </h2>
