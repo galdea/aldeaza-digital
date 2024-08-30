@@ -28,7 +28,7 @@ export default function Contact() {
 
     const formData = new FormData(e.target); // Updated to use `e.target` instead of `event.target`
 
-    formData.append("access_key", "Yf12fb2d3-f16a-41bc-8778-f148e3349578");
+    formData.append("access_key", "f12fb2d3-f16a-41bc-8778-f148e3349578");
 
     const object = Object.fromEntries(formData.entries());
     const json = JSON.stringify(object);
