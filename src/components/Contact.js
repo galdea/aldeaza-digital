@@ -1,12 +1,12 @@
 import React from "react";
-import { useTranslation} from "react-i18next"
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
 
-  const {t, i18n} = useTranslation("global");
+  const { t } = useTranslation("global");
 
   function encode(data) {
     return Object.keys(data)
@@ -16,29 +16,47 @@ export default function Contact() {
       .join("&");
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
-  
+
     const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
-  
+
     if (!emailRegex.test(email)) {
       alert("Please enter a valid email address.");
       return;
     }
-  
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", name, email, message }),
-    })
-      .then(() => {
-        alert("Message sent, I will be contacting you soon!");
-        window.location.reload();
-      })
-      .catch((error) => alert(error));
-  }
-  
 
+    const formData = new FormData(e.target); // Updated to use `e.target` instead of `event.target`
+
+    formData.append("access_key", "Yf12fb2d3-f16a-41bc-8778-f148e3349578");
+
+    const object = Object.fromEntries(formData.entries());
+    const json = JSON.stringify(object);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        console.log(result);
+        // Handle success, e.g., show a success message or clear the form
+      } else {
+        console.error("Error:", result.message);
+        // Handle error, e.g., show an error message
+      }
+    } catch (error) {
+      console.error("Network error:", error);
+      // Handle network errors
+    }
+  }
 
   return (
     <section id="contact" className="relative">
@@ -58,7 +76,7 @@ export default function Contact() {
           <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
             <div className="lg:w-1/2 px-6">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
-              {t("contact.address")}
+                {t("contact.address")}
               </h2>
               <p className="mt-1">
                 Providencia, <br />
@@ -73,28 +91,23 @@ export default function Contact() {
                 gabriel.aldea@gmail.com
               </a>
               <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
-              {t("contact.phone")}
+                {t("contact.phone")}
               </h2>
               <p className="leading-relaxed">+56 993441532</p>
             </div>
           </div>
         </div>
         <form
-          netlify
-          name="contact"
           onSubmit={handleSubmit}
-          className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+          className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
+        >
           <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium custom-green title-font">
-          {t("contact.title")}
-     </h2>
-          <p className="leading-relaxed mb-5 ">
-            
- {t("contact.description")}
-          </p>
+            {t("contact.title")}
+          </h2>
+          <p className="leading-relaxed mb-5">{t("contact.description")}</p>
           <div className="relative mb-4">
             <label htmlFor="name" className="leading-7 text-sm text-gray-400">
-            {t("contact.name")}
-
+              {t("contact.name")}
             </label>
             <input
               type="text"
@@ -119,9 +132,9 @@ export default function Contact() {
           <div className="relative mb-4">
             <label
               htmlFor="message"
-              className="leading-7 text-sm text-gray-400">
-                            {t("contact.message")}
-
+              className="leading-7 text-sm text-gray-400"
+            >
+              {t("contact.message")}
             </label>
             <textarea
               id="message"
@@ -131,28 +144,25 @@ export default function Contact() {
             />
           </div>
           <button
-  type="submit"
-  style={{
-    backgroundColor: '#c3d563', // Base color
-    color: 'white'
-  }}
-  className="border-0 py-2 px-6 focus:outline-none rounded text-lg hover:bg-gray-700"
->
-  {t("contact.submit")}
-</button>
-
-
-
+            type="submit"
+            style={{
+              backgroundColor: "#c3d563",
+              color: "white",
+            }}
+            className="border-0 py-2 px-6 focus:outline-none rounded text-lg hover:bg-gray-700"
+          >
+            {t("contact.submit")}
+          </button>
         </form>
       </div>
-      <a 
-  href="https://aldeazadigital.com" 
-  className='flex justify-center italic pb-5'
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Built by  <span className="aldeaza font-semibold ml-1">Aldeaza</span>
-</a>
+      <a
+        href="https://aldeazadigital.com"
+        className="flex justify-center italic pb-5"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Built by <span className="aldeaza font-semibold ml-1">Aldeaza</span>
+      </a>
     </section>
   );
 }
