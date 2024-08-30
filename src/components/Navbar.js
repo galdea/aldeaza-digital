@@ -26,10 +26,10 @@ export default function Navbar() {
           />
         </a>
 
-        <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700 flex flex-wrap items-center text-base justify-center">
+        <nav className="navbar-links md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700 flex flex-wrap items-center text-base justify-center">
           <a
             href="#projects"
-            className="mx-5 hover:text-white"
+            className="mx-9 hover:text-white"
           >
             {t("navbar.projects")}
           </a>
@@ -50,7 +50,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center justify-end">
           <a
             href="https://www.instagram.com/aldeaza/"
-            className="ml-10 mr-5 hover:text-white"
+            className="navbar-icons ml-10 mr-5 hover:text-white"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -58,7 +58,7 @@ export default function Navbar() {
           </a>
           <a
             href="https://github.com/galdea"
-            className="mr-5 hover:text-white"
+            className="navbar-icons mr-5 hover:text-white"
             rel="noopener noreferrer"
             target="_blank"
           >

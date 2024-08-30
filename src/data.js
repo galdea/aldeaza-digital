@@ -43,7 +43,6 @@ export const testimonials = [
 ];
 
 export const skills = [
-  "Website Building | Landing Pages, Product Sales Websites, Corporate Websites, Portfolios",
   "HTML | CSS | Javascript | ReactJS | NextJS",
   "SquareSpace | Shopify | WordPress",
   "Social Media Campaigns | Video Reels, Graphic Design, Community Management",

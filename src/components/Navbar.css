@@ -1,8 +1,8 @@
 
-.text-orange {
+.navbar-links {
     color: #c3d563;
 }
 
-.text-orange:hover {
-    color: white;
-  }
+.navbar-icons:hover {
+    color: #c3d563;
+}
