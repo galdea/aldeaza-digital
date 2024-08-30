@@ -169,7 +169,7 @@ export default function Contact() {
         >
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg text-center">
             <img
-              src="/workspaces/aldeaza-digital/public/Aldeaza Logo Navbar.png"
+              src="/workspaces/aldeaza-digital/public/Aldeaza-Logo-Navbar.png"
               alt="Aldeaza Logo"
               className="w-32 mx-auto mb-4"
             />

@@ -20,7 +20,7 @@ export default function Navbar() {
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <a href="/" className="flex items-center mb-4 md:mb-0">
           <img
-            src="/Aldeaza Logo Navbar.png"
+            src="/Aldeaza-Logo-Navbar.png"
             alt="Aldeaza Logo"
             className="h-10 md:h-12 object-contain"
           />
