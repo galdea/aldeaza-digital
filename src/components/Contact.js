@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 export default function Contact() {
-  const [name, setName] = React.useState("");
-  const [email, setEmail] = React.useState("");
-  const [message, setMessage] = React.useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [showModal, setShowModal] = useState(false);
 
   const { t } = useTranslation("global");
 
@@ -26,8 +27,12 @@ export default function Contact() {
       return;
     }
 
-    const formData = new FormData(e.target); // Updated to use `e.target` instead of `event.target`
+    if (!name.trim() || !message.trim()) {
+      alert("Please fill in every text field.");
+      return;
+    }
 
+    const formData = new FormData(e.target);
     formData.append("access_key", "f12fb2d3-f16a-41bc-8778-f148e3349578");
 
     const object = Object.fromEntries(formData.entries());
@@ -46,15 +51,12 @@ export default function Contact() {
       const result = await response.json();
 
       if (result.success) {
-        console.log(result);
-        // Handle success, e.g., show a success message or clear the form
+        setShowModal(true);
       } else {
         console.error("Error:", result.message);
-        // Handle error, e.g., show an error message
       }
     } catch (error) {
       console.error("Network error:", error);
-      // Handle network errors
     }
   }
 
@@ -145,12 +147,8 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            style={{
-              backgroundColor: "#c3d563",
-              color: "white",
-            }}
-            className="border-0 py-2 px-6 focus:outline-none rounded text-lg hover:bg-gray-700"
-          >
+            className="submit-button text-white border-0 py-2 px-6 rounded text-lg hover:bg-gray-700 focus:outline-none transition-colors duration-300"
+            >
             {t("contact.submit")}
           </button>
         </form>
@@ -163,6 +161,31 @@ export default function Contact() {
       >
         Built by <span className="aldeaza font-semibold ml-1">Aldeaza</span>
       </a>
+
+      {showModal && (
+        <div
+          className="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-75"
+          onClick={() => setShowModal(false)}
+        >
+          <div className="bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+            <img
+              src="/workspaces/aldeaza-digital/public/Aldeaza Logo Navbar.png"
+              alt="Aldeaza Logo"
+              className="w-32 mx-auto mb-4"
+            />
+            <h2 className="text-xl font-semibold mb-4">
+              Your message has been sent!
+            </h2>
+            <p className="mb-6">We will be contacting you soon.</p>
+            <button
+              onClick={() => setShowModal(false)}
+              className="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

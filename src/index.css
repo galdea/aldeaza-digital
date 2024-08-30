@@ -2,14 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Define a class for the section title color */
 .section-title {
   color: white;
 }
 
-/* Custom CSS */
 .custom-green, .aldeaza {
   color: #c3d563;
+}
+
+.submit-button {
+  background-color: #c3d563;
 }
 
 
