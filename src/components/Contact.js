@@ -145,6 +145,14 @@ export default function Contact() {
 
         </form>
       </div>
+      <a 
+  href="https://aldeazadigital.com" 
+  className='flex justify-center italic pb-5'
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Built by  <span className="aldeaza font-semibold ml-1">Aldeaza</span>
+</a>
     </section>
   );
 }
