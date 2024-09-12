@@ -90,7 +90,7 @@ export default function Contact() {
                 EMAIL
               </h2>
               <a className="custom-green leading-relaxed md:pr-16">
-                galdea@uc.cl
+                contact@aldeazadigital.com
               </a>
               <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
                 {t("contact.phone")}
