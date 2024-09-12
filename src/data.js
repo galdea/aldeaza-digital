@@ -26,13 +26,13 @@ export const projects = [
       description:
         "Using video stock and the latest editing techniques, we crafted a series of dynamic Instagram Reels to highlight their diverse inventory and exclusive offers.",
       image: "./mitsubishi.png",
-      link: "https://www.instagram.com/reel/C-gs9TTILUk/",},
-      {title: "Two Mitsubishi Dealerships",
-        subtitle: "Instagram Reel campaign for Texan Car Dealership",
+      link: "https://www.instagram.com/reel/C6Ri_IDJNxw/",},
+      {title: "Galpon Creativo Vida",
+        subtitle: "Social Media campaing for Cultural Center Hub in Las Flores, Argentina",
         description:
-          "Using video stock and the latest editing techniques, we crafted a series of dynamic Instagram Reels to highlight their diverse inventory and exclusive offers.",
-        image: "./toyota.png",
-        link: "https://www.instagram.com/reel/C-gs9TTILUk/",},
+          "Using engaging content and innovative community management strategies, we developed dynamic material to showcase the hub’s events and significantly increase their follower base.",
+        image: "./galpon.png",
+        link: "https://www.instagram.com/galponcreativovida/",},
   {
     title: "La Cantina SpA",
     subtitle: "La Cantina Native Forest Conservation Park website | Coming soon",
