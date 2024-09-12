@@ -15,6 +15,24 @@ export const projects = [
     image: "./cedar-marketing.png",
     link: "https://www.instagram.com/cedar_marketing_/",
   },
+  {title: "Mac Haik Toyota",
+    subtitle: "Instagram Reel campaign for Texan Car Dealership",
+    description:
+      "Using video stock and the latest editing techniques, we crafted a series of dynamic Instagram Reels to highlight their diverse inventory and exclusive offers.",
+    image: "./toyota.png",
+    link: "https://www.instagram.com/reel/C-gs9TTILUk/",},
+    {title: "Conway Heaton Ford",
+      subtitle: "Instagram Reel campaign for Texan Car Dealership",
+      description:
+        "Using video stock and the latest editing techniques, we crafted a series of dynamic Instagram Reels to highlight their diverse inventory and exclusive offers.",
+      image: "./toyota.png",
+      link: "https://www.instagram.com/reel/C-gs9TTILUk/",},
+      {title: "Two Mitsubishi Dealerships",
+        subtitle: "Instagram Reel campaign for Texan Car Dealership",
+        description:
+          "Using video stock and the latest editing techniques, we crafted a series of dynamic Instagram Reels to highlight their diverse inventory and exclusive offers.",
+        image: "./toyota.png",
+        link: "https://www.instagram.com/reel/C-gs9TTILUk/",},
   {
     title: "La Cantina SpA",
     subtitle: "La Cantina Native Forest Conservation Park website | Coming soon",
